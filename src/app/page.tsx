@@ -1,10 +1,12 @@
 import {
   SiGithub,
   SiInstagram,
-  SiLinkedin,
+  SiDiscord,
   SiSpotify,
   SiTwitter,
   SiYoutube,
+  SiXbox,
+  SiSteam,
 } from "@icons-pack/react-simple-icons";
 import { ArrowRight, ArrowUpRight, Download } from "lucide-react";
 import Link from "next/link";
@@ -18,34 +20,24 @@ interface Link {
 
 const externalLinks = [
   {
-    description: "LinkedIn",
-    url: "https://linkedin.com/in/lukeberrypi",
-    Icon: <SiLinkedin />,
-  },
-  {
     description: "GitHub",
-    url: "https://github.com/LukeberryPi",
+    url: "https://github.com/JoaquimCassano",
     Icon: <SiGithub />,
   },
   {
-    description: "Youtube",
-    url: "https://youtube.com/@LukeberryPi",
-    Icon: <SiYoutube />,
-  },
-  {
     description: "X / Twitter",
-    url: "https://twitter.com/LukeberryPi",
+    url: "https://twitter.com/onlyanerd2",
     Icon: <SiTwitter />,
   },
   {
-    description: "Spotify",
-    url: "https://open.spotify.com/artist/4ymHKBTThfeOL114lwCWPQ?si=Ci9I2yhCSY-BfEjtqZuFqQ",
-    Icon: <SiSpotify />,
+    description: "Discord",
+    url: "onlyanerd #TODO",
+    Icon: <SiDiscord />,
   },
   {
-    description: "Instagram",
-    url: "https://instagram.com/LukeberryPi",
-    Icon: <SiInstagram />,
+    description: "Steam",
+    url: "https://steamcommunity.com/profiles/76561199216108902/",
+    Icon: <SiSteam />,
   },
 ] as Link[];
 
@@ -120,6 +112,11 @@ export default function HomePage() {
             <Download className="size-5" />
           </a>
           <span className="text-zinc-500">It&apos;s only one page.</span>
+        </div>
+        <div className="absolute inset-x-center bottom-3">
+          <p>
+            This website is forked from <a className="underline font-bold" href="https://github.com/LukeberryPi/blog"> this</a> project
+          </p>
         </div>
       </div>
     </div>

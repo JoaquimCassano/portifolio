@@ -26,6 +26,14 @@ export default async function ArticlesPage() {
           </Link>
         ))}
       </section>
+        {articles.length === 0 && (
+          <div className="flex items-center justify-center">
+            <p>
+              <span className="bold">404</span>. There are no articles yet. Be
+              patient, I'm working on it.
+            </p>
+          </div>
+        )}
     </div>
   );
 }
