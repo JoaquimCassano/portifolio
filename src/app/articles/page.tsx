@@ -30,7 +30,7 @@ export default async function ArticlesPage() {
           <div className="flex items-center justify-center">
             <p>
               <span className="bold">404</span>. There are no articles yet. Be
-              patient, I'm working on it.
+              patient, I am working on it.
             </p>
           </div>
         )}

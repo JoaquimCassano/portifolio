@@ -9,7 +9,7 @@ export default function AboutPage() {
         </p>
         <p>
           In my free time I enjoy coding and playing Videogames, suchas
-          Fortnite, Valorant and EA FC 24 (yes, i'm a fifa addict)
+          Fortnite, Valorant and EA FC 24 (yes, i am a fifa addict)
         </p>
         <p>
           Thank you for visiting my website. I hope you find it informative and
