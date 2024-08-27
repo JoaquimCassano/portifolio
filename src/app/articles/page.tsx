@@ -6,7 +6,7 @@ export default async function ArticlesPage() {
   const articles = getArticles();
   return (
     <div className="w-full">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between"> 
         <h1 className="my-12 font-bold">Articles</h1>
         <Link href={"/rss.xml"} className="text-zinc-500">
           <p className="underline">RSS Feed</p>
@@ -28,7 +28,7 @@ export default async function ArticlesPage() {
             </Link>
         ))}
       </section>
-        {articles.length === 0 && (
+        {articles.filter((article) => article.id.endsWith(".md")).length === 0 && (
           <div className="flex items-center justify-center">
             <p>
               <span className="bold">404</span>. There are no articles yet. Be

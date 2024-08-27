@@ -7,6 +7,7 @@ import {
   SiYoutube,
   SiXbox,
   SiSteam,
+  SiGmail,
 } from "@icons-pack/react-simple-icons";
 import { ArrowRight, ArrowUpRight, Download } from "lucide-react";
 import Link from "next/link";
@@ -25,9 +26,9 @@ const externalLinks = [
     Icon: <SiGithub />,
   },
   {
-    description: "X / Twitter",
-    url: "https://twitter.com/onlyanerd2",
-    Icon: <SiTwitter />,
+    description: "Mail",
+    url: "mailto:joaquim@cassano.com.br",
+    Icon: <SiGmail />,
   },
   {
     description: "Discord",
