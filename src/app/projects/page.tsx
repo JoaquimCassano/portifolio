@@ -30,7 +30,7 @@ export default function ProjectsPage() {
             />
           </a>
           <p>
-            The official Python SDK of {" "}
+            The official Python SDK of{" "}
             <a
               className="font-bold underline hover:scale-150"
               href="https://alertpix.live"
@@ -66,46 +66,52 @@ export default function ProjectsPage() {
             <div className="flex items-center gap-4">
               <div className="ring-1 ring-zinc-950 px-2 py-1">Python</div>
               <div className="ring-1 ring-zinc-950 px-2 py-1">OpenAI</div>
-              <div className="ring-1 ring-zinc-950 px-2 py-1">Huggingface</div>
-              <div className="ring-1 ring-zinc-950 px-2 py-1">Tweety</div>
+              <div className="ring-1 ring-zinc-950 px-2 py-1">Atproto</div>
             </div>
           </div>
           <a
-            href="https://phived.com"
+            href="https://bsky.app/profile/poptimedev.bsky.social"
             className="group block overflow-hidden my-6 relative ring-1 ring-zinc-950"
             target="_blank"
           >
             <span className="z-10 absolute flex items-center gap-2 top-2 right-2 opacity-0 transition-all group-hover:opacity-100">
-              Click to visit website <ArrowUpRight className="size-5" />
+              Click to visit the profile <ArrowUpRight className="size-5" />
             </span>
             <Image
               className="size-full group-hover:scale-105 transition-all"
-              src="/projects/phived.png"
+              src="/projects/poptimedev.jpg"
               width={9999}
               height={250}
               alt="merchant"
             />
           </a>
           <p>
-            A Twitter/X bot that uses web scrapping to get the tweets of the
-            timeline, and an LLM to analyze them, find the most important news
-            and advertise them as tweets. It also has some special features:
+            A Bluesky bot that noticies the latest curiosities and news about
+            the brazilian&apos;s &quot;bolha dev&quot;. It uses `gpt-4o-mini` to
+            analyze the feed, and post about them
           </p>
           <ul>
             <li>
-              <span className="font-bold">Images analyzing: </span>it uses the
-              Blip image analyzing model to describe the images of the posts to
-              the Openai GPT-3, in order to get better results.
+              <span className="font-bold">Repost bot: </span>It also works as a
+              repost bot. If you mention the bot in a post, it will repost it,
+              in order to &quot; boost &quot; it.
             </li>
-
           </ul>
           <div className="items-center flex gap-4">
             <a
               className="items-center flex gap-2"
-              href="https://github.com/LukeberryPi/phived"
+              href="https://github.com/JoaquimCassano/PoptimeDEV-2.0"
               target="_blank"
             >
               View code
+              <ArrowUpRight className="size-5" />
+            </a>
+            <a
+              className="items-center flex gap-2"
+              href="https://github.com/JoaquimCassano/PoptimeDEV-2.0"
+              target="_blank"
+            >
+              Visit profile
               <ArrowUpRight className="size-5" />
             </a>
           </div>

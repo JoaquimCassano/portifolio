@@ -30,11 +30,7 @@ const externalLinks = [
     url: "mailto:joaquim@cassano.com.br",
     Icon: <SiGmail />,
   },
-  {
-    description: "Discord",
-    url: "onlyanerd #TODO",
-    Icon: <SiDiscord />,
-  },
+
   {
     description: "Steam",
     url: "https://steamcommunity.com/profiles/76561199216108902/",
@@ -103,7 +99,7 @@ export default function HomePage() {
             />
           ))}
         </div>
-        <div className="flex gap-2 flex-col">
+        {/* <div className="flex gap-2 flex-col">
           <a
             href="/luke-berry-cv.pdf"
             download="Luke-Berry-CV.pdf"
@@ -113,7 +109,7 @@ export default function HomePage() {
             <Download className="size-5" />
           </a>
           <span className="text-zinc-500">It&apos;s only one page.</span>
-        </div>
+        </div> */}
         <div className="absolute inset-x-center bottom-3">
           <p>
             This website is forked from <a className="underline font-bold" href="https://github.com/LukeberryPi/blog"> this</a> project
