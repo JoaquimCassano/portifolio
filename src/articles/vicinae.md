@@ -38,7 +38,7 @@ Disappointed, I moved back to my good-old Albert, and kept using it until I fina
 
 ## Problems
 
-## Raycast extenion's compatibility
+## Raycast extension's compatibility
 
 Just like Flare, most Raycast extensions are unstable or simply don't work at all. The most common causes are:
 
