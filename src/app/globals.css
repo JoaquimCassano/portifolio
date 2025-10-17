@@ -12,10 +12,28 @@
   --sh-keyword: #f47067;
   --sh-comment: #a19595;
 }
+
+.dark {
+  --sh-class: #4c9aff;
+  --sh-identifier: #d4d4d8;
+  --sh-sign: #a1a1aa;
+  --sh-property: #60a5fa;
+  --sh-entity: #34d399;
+  --sh-jsxliterals: #a78bfa;
+  --sh-string: #2dd4bf;
+  --sh-keyword: #f87171;
+  --sh-comment: #71717a;
+}
+
 @layer base {
   html,
   body {
     @apply bg-zinc-50 text-zinc-950;
+  }
+
+  .dark html,
+  .dark body {
+    @apply bg-zinc-950 text-zinc-50;
   }
 
   article > h1,
@@ -24,7 +42,7 @@
   article > h4,
   article > h5,
   article > h6 {
-    @apply text-zinc-950 font-bold my-6;
+    @apply text-zinc-950 dark:text-zinc-50 font-bold my-6;
   }
 
   article h2 {
@@ -32,12 +50,12 @@
   }
 
   article p {
-    @apply text-zinc-700 my-4 leading-relaxed;
+    @apply text-zinc-700 dark:text-zinc-300 my-4 leading-relaxed;
   }
 
   article ul,
   article ol {
-    @apply text-zinc-700 my-4 pl-8;
+    @apply text-zinc-700 dark:text-zinc-300 my-4 pl-8;
   }
 
   article li {
@@ -53,20 +71,20 @@
   }
 
   article blockquote {
-    @apply border-l-4 border-emerald-600 pl-4 my-4;
+    @apply border-l-4 border-emerald-600 dark:border-emerald-400 pl-4 my-4;
   }
 
   article :not(pre) > code {
-    @apply rounded ring-1 ring-zinc-950 px-1.5 py-0.5 mx-0.5 text-sm select-all text-nowrap;
+    @apply rounded ring-1 ring-zinc-950 dark:ring-zinc-100 px-1.5 py-0.5 mx-0.5 text-sm select-all text-nowrap;
   }
 
   article pre {
-    @apply ring-1 ring-zinc-950 p-4 my-4 overflow-x-auto text-sm;
+    @apply ring-1 ring-zinc-950 dark:ring-zinc-100 p-4 my-4 overflow-x-auto text-sm;
   }
 
   header a,
   article a {
-    @apply underline underline-offset-2 decoration-2 decoration-emerald-600;
+    @apply underline underline-offset-2 decoration-2 decoration-emerald-600 dark:decoration-emerald-400;
   }
 
   button,
