@@ -16,20 +16,22 @@ const ARTICLES_DIR = path.join(process.cwd(), "src/articles");
 export const getArticles = () => {
   const fileNames = fs.readdirSync(ARTICLES_DIR);
 
-  const allArticlesData = fileNames.map((fileName) => {
-    const id = fileName.replace(/\.md$/, "");
+  const allArticlesData = fileNames
+    .filter((fileName) => fileName.endsWith(".md"))
+    .map((fileName) => {
+      const id = fileName.replace(/\.md$/, "");
 
-    const fullPath = path.join(ARTICLES_DIR, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf-8");
+      const fullPath = path.join(ARTICLES_DIR, fileName);
+      const fileContents = fs.readFileSync(fullPath, "utf-8");
 
-    const matterResult = matter(fileContents);
+      const matterResult = matter(fileContents);
 
-    return {
-      id,
-      title: matterResult.data.title,
-      date: moment(matterResult.data.date).format("YYYY-MM-DD"),
-    };
-  });
+      return {
+        id,
+        title: matterResult.data.title,
+        date: moment(matterResult.data.date, "YYYY-MM-DD").format("YYYY-MM-DD"),
+      };
+    });
 
   return allArticlesData.sort((a, b) => {
     if (a.date < b.date) {

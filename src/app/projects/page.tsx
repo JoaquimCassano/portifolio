@@ -20,7 +20,10 @@ export default function ProjectsPage() {
               <h2 className="m-0">{project.title}</h2>
               <div className="flex items-center gap-4">
                 {project.tags.map((tag: string) => (
-                  <div key={tag} className="ring-1 ring-zinc-950 dark:ring-zinc-100 px-2 py-1">
+                  <div
+                    key={tag}
+                    className="ring-1 ring-zinc-950 dark:ring-zinc-100 px-2 py-1"
+                  >
                     {tag}
                   </div>
                 ))}

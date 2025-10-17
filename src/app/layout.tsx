@@ -40,7 +40,10 @@ export default function RootLayout({
               </div>
             </nav>
           </header>
-          <main className="mx-auto max-w-prose">{children}<ScrollToTop /></main>
+          <main className="mx-auto max-w-prose">
+            {children}
+            <ScrollToTop />
+          </main>
         </ThemeProvider>
       </body>
     </html>

@@ -34,17 +34,28 @@
     @apply bg-zinc-50 text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50;
   }
 
-  article > h1,
-  article > h2,
-  article > h3,
-  article > h4,
-  article > h5,
-  article > h6 {
-    @apply text-zinc-950 dark:text-zinc-50 font-bold my-6;
+  article > h1 {
+    @apply text-3xl text-zinc-950 dark:text-zinc-50 font-bold my-6;
   }
 
-  article h2 {
-    @apply uppercase tracking-wide font-normal mt-12 font-bold;
+  article > h2 {
+    @apply text-2xl text-zinc-950 dark:text-zinc-50 font-bold my-6 tracking-wide mt-12;
+  }
+
+  article > h3 {
+    @apply text-xl text-zinc-950 dark:text-zinc-50 font-bold my-6;
+  }
+
+  article > h4 {
+    @apply text-lg text-zinc-950 dark:text-zinc-50 font-bold my-6;
+  }
+
+  article > h5 {
+    @apply text-lg text-zinc-950 dark:text-zinc-50 font-bold my-6;
+  }
+
+  article > h6 {
+    @apply text-base text-zinc-950 dark:text-zinc-50 font-bold my-6;
   }
 
   article p {
