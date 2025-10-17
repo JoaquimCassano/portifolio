@@ -1,11 +1,6 @@
 import {
   SiGithub,
-  SiInstagram,
-  SiDiscord,
-  SiSpotify,
-  SiTwitter,
-  SiYoutube,
-  SiXbox,
+  SiX,
   SiSteam,
   SiGmail,
 } from "@icons-pack/react-simple-icons";
@@ -30,11 +25,15 @@ const externalLinks = [
     url: "mailto:joaquim@cassano.com.br",
     Icon: <SiGmail />,
   },
-
   {
     description: "Steam",
     url: "https://steamcommunity.com/profiles/76561199216108902/",
     Icon: <SiSteam />,
+  },
+  {
+    description: "X (Twitter)",
+    url: "https://x.com/JoaquimCassano",
+    Icon: <SiX />,
   },
 ] as Link[];
 
@@ -112,7 +111,15 @@ export default function HomePage() {
         </div> */}
         <div className="absolute inset-x-center bottom-3">
           <p>
-            This website is forked from <a className="underline font-bold" href="https://github.com/LukeberryPi/blog"> this</a> project
+            This website is forked from{" "}
+            <a
+              className="underline font-bold"
+              href="https://github.com/LukeberryPi/blog"
+            >
+              {" "}
+              this
+            </a>{" "}
+            project
           </p>
         </div>
       </div>
