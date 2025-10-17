@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import {
@@ -6,6 +7,16 @@ import {
   ProjectFeature,
   ProjectLink,
 } from "@/src/lib/projects";
+
+export const metadata: Metadata = {
+  title: "Projects - Joaquim Cassano | Python SDK, Bots & Web Apps",
+  description: "Explore my software projects including Python SDKs, Bluesky bots, and web applications built with modern technologies.",
+  openGraph: {
+    title: "My Projects",
+    description: "Explore my software projects",
+    url: "https://cassano.com.br/projects",
+  },
+};
 
 export default function ProjectsPage() {
   const projects = getProjects();

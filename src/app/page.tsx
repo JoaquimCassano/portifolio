@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import {
   SiGithub,
   SiX,
@@ -7,6 +8,16 @@ import {
 import { ArrowRight, ArrowUpRight, Download } from "lucide-react";
 import Link from "next/link";
 import { ReactNode } from "react";
+
+export const metadata: Metadata = {
+  title: "Joaquim Cassano - Software Engineer | Home",
+  description: "Joaquim Cassano's portfolio. Software engineer from Brazil. Explore my projects, articles, and connect on GitHub.",
+  openGraph: {
+    title: "Joaquim Cassano - Software Engineer",
+    description: "Joaquim Cassano's portfolio. Software engineer from Brazil.",
+    url: "https://cassano.com.br",
+  },
+};
 
 interface Link {
   description: string;

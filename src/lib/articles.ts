@@ -9,6 +9,7 @@ export type Article = {
   id: string;
   title: string;
   date: string;
+  excerpt?: string;
 };
 
 const ARTICLES_DIR = path.join(process.cwd(), "src/articles");
@@ -25,11 +26,13 @@ export const getArticles = () => {
       const fileContents = fs.readFileSync(fullPath, "utf-8");
 
       const matterResult = matter(fileContents);
+      const excerpt = matterResult.data.excerpt || matterResult.content.substring(0, 160).replace(/[#*_]/g, "");
 
       return {
         id,
         title: matterResult.data.title,
         date: moment(matterResult.data.date, "YYYY-MM-DD").format("YYYY-MM-DD"),
+        excerpt,
       };
     });
 
@@ -52,11 +55,14 @@ export const getArticleData = async (id: string) => {
     .use(html)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
+  const excerpt = matterResult.data.excerpt || matterResult.content.substring(0, 160).replace(/[#*_]/g, "");
 
   return {
     id,
     contentHtml,
     title: matterResult.data.title,
     date: moment(matterResult.data.date, "YYYY-MM-DD").format("MMMM Do, YYYY"),
+    publishedDate: moment(matterResult.data.date, "YYYY-MM-DD").toISOString(),
+    excerpt,
   };
 };

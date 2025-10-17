@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node src/scripts/gen-sitemap.js && next build",
     "start": "next start",
     "lint": "next lint",
-    "generate:rss": "node src/scripts/gen-rss.js"
+    "generate:rss": "node src/scripts/gen-rss.js",
+    "generate:sitemap": "node src/scripts/gen-sitemap.js"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^9.5.0",

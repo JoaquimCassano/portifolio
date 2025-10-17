@@ -1,6 +1,17 @@
+import type { Metadata } from "next";
 import { Article, getArticles } from "@/src/lib/articles";
 import moment from "moment";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Articles - Joaquim Cassano | Python, Web Dev & Software Engineering",
+  description: "Read my latest articles about Python, web development, software engineering, and tech insights.",
+  openGraph: {
+    title: "My Articles",
+    description: "Read my latest articles about Python, web development, and software engineering",
+    url: "https://cassano.com.br/articles",
+  },
+};
 
 export default async function ArticlesPage() {
   const articles = getArticles();
