@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Joaquim Cassano - Software Engineer",
-  description: "Learn about Joaquim Cassano, a trainee Brazilian software engineer passionate about Python, web development, and gaming. Contact me at joaquim@cassano.com.br",
+  description:
+    "Learn about Joaquim Cassano, a trainee Brazilian software engineer passionate about Python, web development, and gaming. Contact me at joaquim@cassano.com.br",
   openGraph: {
     title: "About Joaquim Cassano",
-    description: "Learn about Joaquim Cassano, a trainee Brazilian software engineer",
+    description:
+      "Learn about Joaquim Cassano, a trainee Brazilian software engineer",
     url: "https://cassano.com.br/about",
   },
 };

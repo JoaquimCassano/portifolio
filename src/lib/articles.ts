@@ -26,7 +26,9 @@ export const getArticles = () => {
       const fileContents = fs.readFileSync(fullPath, "utf-8");
 
       const matterResult = matter(fileContents);
-      const excerpt = matterResult.data.excerpt || matterResult.content.substring(0, 160).replace(/[#*_]/g, "");
+      const excerpt =
+        matterResult.data.excerpt ||
+        matterResult.content.substring(0, 160).replace(/[#*_]/g, "");
 
       return {
         id,
@@ -55,7 +57,9 @@ export const getArticleData = async (id: string) => {
     .use(html)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
-  const excerpt = matterResult.data.excerpt || matterResult.content.substring(0, 160).replace(/[#*_]/g, "");
+  const excerpt =
+    matterResult.data.excerpt ||
+    matterResult.content.substring(0, 160).replace(/[#*_]/g, "");
 
   return {
     id,

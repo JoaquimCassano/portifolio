@@ -9,5 +9,6 @@ export const metadata = {
     twitter: "https://x.com/JoaquimCassano",
     bluesky: "https://bsky.app/profile/joaquimcassano.bsky.social",
   },
-  siteDescription: "Discover my projects, articles on Python, web development, and software engineering.",
+  siteDescription:
+    "Discover my projects, articles on Python, web development, and software engineering.",
 };
