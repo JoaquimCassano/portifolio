@@ -5,6 +5,7 @@ import "./globals.css";
 import { ScrollToTop } from "../components/scroll-to-top";
 import { ThemeProvider } from "../components/theme-provider";
 import { ThemeToggle } from "../components/theme-toggle";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Joaquim Cassano's Blog",
@@ -46,6 +47,7 @@ export default function RootLayout({
           </main>
         </ThemeProvider>
       </body>
+      <Analytics />
     </html>
   );
 }
