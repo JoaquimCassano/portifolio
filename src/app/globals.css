@@ -26,14 +26,12 @@
 }
 
 @layer base {
-  html,
-  body {
-    @apply bg-zinc-50 text-zinc-950;
+  html {
+    @apply bg-zinc-50 text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50;
   }
 
-  .dark html,
-  .dark body {
-    @apply bg-zinc-950 text-zinc-50;
+  body {
+    @apply bg-zinc-50 text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50;
   }
 
   article > h1,

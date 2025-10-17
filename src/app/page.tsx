@@ -43,7 +43,7 @@ const ExternalLink = (link: Link) => {
       key={link.description}
       href={link.url}
       target="_blank"
-      className="flex items-center justify-between ring-1 ring-zinc-950 p-4 hover:bg-zinc-200 transition-all"
+      className="flex items-center justify-between ring-1 ring-zinc-950 dark:ring-zinc-100 p-4 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all"
     >
       <span className="flex items-center gap-4">
         {link.Icon} {link.description}

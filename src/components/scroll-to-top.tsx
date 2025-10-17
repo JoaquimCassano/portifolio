@@ -26,15 +26,7 @@ export const ScrollToTop = () => {
 
   return (
     <button
-      style={{
-        position: "fixed",
-        bottom: 16,
-        right: 16,
-        zIndex: 100,
-        backgroundColor: "#fafafa",
-        border: "1px solid #18181b",
-        padding: 12,
-      }}
+      className="fixed bottom-4 right-4 z-[100] bg-zinc-50 dark:bg-zinc-900 border border-zinc-950 dark:border-zinc-100 p-3 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors"
       onClick={() => {
         window.scrollTo({
           top: 0,

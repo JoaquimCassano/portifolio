@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="min-h-screen" suppressHydrationWarning>
-      <body className={`${karla.className} min-h-full p-4`}>
+      <body className={`${karla.className} min-h-screen p-4`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <header className="max-w-prose mx-auto mb-8">
             <nav className="flex items-center justify-between">

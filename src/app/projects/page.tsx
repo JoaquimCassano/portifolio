@@ -20,7 +20,7 @@ export default function ProjectsPage() {
               <h2 className="m-0">{project.title}</h2>
               <div className="flex items-center gap-4">
                 {project.tags.map((tag: string) => (
-                  <div key={tag} className="ring-1 ring-zinc-950 px-2 py-1">
+                  <div key={tag} className="ring-1 ring-zinc-950 dark:ring-zinc-100 px-2 py-1">
                     {tag}
                   </div>
                 ))}
@@ -29,7 +29,7 @@ export default function ProjectsPage() {
             <a
               href={project.imageLink}
               target="_blank"
-              className="group block overflow-hidden my-6 relative ring-1 ring-zinc-950"
+              className="group block overflow-hidden my-6 relative ring-1 ring-zinc-950 dark:ring-zinc-100"
             >
               <span className="z-10 absolute flex items-center transition-all gap-2 top-2 right-2 opacity-0 group-hover:opacity-100 text-zinc-100">
                 Click to visit{" "}
