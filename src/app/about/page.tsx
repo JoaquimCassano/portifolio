@@ -8,8 +8,8 @@ export default function AboutPage() {
           Armadillos
         </p>
         <p>
-          In my free time I enjoy coding and playing Videogames, suchas
-          Fortnite, Valorant and EA FC 24 (yes, i am a fifa addict)
+          In my free time I enjoy coding and playing Videogames, such as
+          Fortnite, Valorant and EA FC 26 (yes, I am a fifa addict)
         </p>
         <p>
           Thank you for visiting my website. I hope you find it informative and
