@@ -1,5 +1,27 @@
 [
   {
+    "title": "UI Setup",
+    "description": "If you wanna vibe code, at least do it properly. Use AI to clone stunning UIs, extract their style, and consistently generate beautiful pages.",
+    "image": "/projects/uisetup.png",
+    "imageLink": "https://uisetup.joaquimcassano.com.br/",
+    "tags": [
+      "Python",
+      "Claude Code",
+      "Copilot",
+      "CLI"
+    ],
+    "links": [
+      {
+        "label": "View code",
+        "href": "https://github.com/JoaquimCassano/ui-setup"
+      },
+      {
+        "label": "Check the website",
+        "href": "https://uisetup.joaquimcassano.com.br/"
+      }
+    ]
+  },
+  {
     "title": "Abacatepay SDK",
     "description": "The official Python SDK of <a class=\"font-bold underline hover:scale-150\" href=\"https://abacatepay.com\">Abacatepay</a>. It uses the Requests library to handle the API Connections.",
     "image": "/projects/abacate.png",
