@@ -1,5 +1,23 @@
 [
   {
+    "title": "Corrija pra mim",
+    "description": "An app that uses AI to correct ENEM Essays.",
+    "image": "/projects/corrijapramim.png",
+    "imageLink": "https://corrijapramim.vercel.app",
+    "links": [
+      {
+        "label": "Visit website",
+        "href": "https://corrijapramim.vercel.app"
+      }
+    ],
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "DaisyUI"
+    ]
+  },
+  {
     "title": "UI Setup",
     "description": "If you wanna vibe code, at least do it properly. Use AI to clone stunning UIs, extract their style, and consistently generate beautiful pages.",
     "image": "/projects/uisetup.png",
@@ -57,30 +75,6 @@
         "label": "View code",
         "href": "https://github.com/JoaquimCassano/Alert-SDK"
       }
-    ]
-  },
-  {
-    "title": "PopTime DEV",
-    "description": "A Bluesky bot that noticies the latest curiosities and news about the brazilian's \"bolha dev\". It uses `gpt-4o-mini` to analyze the feed, and post about them",
-    "image": "/projects/poptimedev.png",
-    "imageLink": "https://bsky.app/profile/did:plc:7upzdz2kx2yfebptqkd2sjad",
-    "tags": [
-      "Python",
-      "OpenAI",
-      "Atproto"
-    ],
-    "links": [
-      {
-        "label": "View code",
-        "href": "https://github.com/JoaquimCassano/PoptimeDEV-2.0"
-      },
-      {
-        "label": "Visit profile",
-        "href": "https://bsky.app/profile/did:plc:7upzdz2kx2yfebptqkd2sjad"
-      }
-    ],
-    "features": [
-      "<span class=\"font-bold\">Repost bot: </span>It also works as a repost bot. If you mention the bot in a post, it will repost it, in order to \"boost\" it."
     ]
   }
 ]
