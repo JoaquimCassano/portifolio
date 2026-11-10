@@ -18,6 +18,57 @@
     ]
   },
   {
+    "title": "Belas do Bodyboard",
+    "description": "Website for a women's bodyboard school in Rio de Janeiro (Recreio and Barra da Tijuca): class schedules, photo gallery, equipment catalog and a direct WhatsApp booking button.",
+    "image": "/projects/belasdobodyboard.png",
+    "imageLink": "https://belasdobodyboard.com.br",
+    "links": [
+      {
+        "label": "Visit website",
+        "href": "https://belasdobodyboard.com.br"
+      }
+    ],
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS"
+    ]
+  },
+  {
+    "title": "Zenit Studio de Dança",
+    "description": "Website for a dance studio in Recreio dos Bandeirantes, Rio de Janeiro, with class schedules for children, teens and adults.",
+    "image": "/projects/zenitdanca.png",
+    "imageLink": "https://zenitdanca.com.br",
+    "links": [
+      {
+        "label": "Visit website",
+        "href": "https://zenitdanca.com.br"
+      }
+    ],
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS"
+    ]
+  },
+  {
+    "title": "Ana Carrilho Podologia",
+    "description": "Website for a podiatrist in Rio de Janeiro: treatments, two locations, Google reviews and an appointment request form that opens WhatsApp with the message ready.",
+    "image": "/projects/anacarrilho.png",
+    "imageLink": "https://anacarrilho.com.br",
+    "links": [
+      {
+        "label": "Visit website",
+        "href": "https://anacarrilho.com.br"
+      }
+    ],
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS"
+    ]
+  },
+  {
     "title": "UI Setup",
     "description": "If you wanna vibe code, at least do it properly. Use AI to clone stunning UIs, extract their style, and consistently generate beautiful pages.",
     "image": "/projects/uisetup.png",
